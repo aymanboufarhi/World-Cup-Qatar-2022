@@ -1,0 +1,155 @@
+/* Qatar2022 font */
+@font-face { font-family: Qatar2022; font-weight: bolder; src: url('./Qatar2022Font/Graphik-Arabic-Medium.otf'); } 
+@font-face { font-family: Qatar2022; font-weight: bold; src: url('./Qatar2022Font/Qatar2022Arabic-Bold.ttf');}
+@font-face { font-family: Qatar2022; font-weight: lighter; src: url('./Qatar2022Font/Qatar2022Arabic-Heavy.ttf');} 
+/* styler le volet 6 */
+.footer-distributed {
+    background-color: #eeeee4;
+    box-shadow: 0 1px 1px 0;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px Qatar2022, sans-serif;
+    padding: 55px 50px;
+    
+}
+/* centre les contenaires du volet  */
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+/* la taille du footer  */
+.footer-distributed .footer-left {
+    width: 40%;
+}
+/* changer le couleur d'ecriture du block */
+.footer-distributed h3 {
+    color: #8a1538;
+    font: normal 36px Qatar2022, sans-serif;
+    margin: 0;
+}
+/* couleur du plan d'arrier */
+.footer-distributed h3 span {
+    color: #eeeee4;
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+/* afficher les icones dans une seule ligne */
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+/* la taille de block centre */
+.footer-distributed .footer-center {
+    width: 35%;
+}
+/* les style du block centre */
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+/* la taille du block des icones */
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+/* les styles des liens du block centre */
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p a {
+    color: #8a1538;
+    text-decoration: none;
+    ;
+}
+/* distribution du block droite */
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+address {
+    display: inline-block;
+    text-align: right;
+}
+/* cree l'espace enter les contenaires du volet 6 */
+dt {
+    display: inline;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: small;
+}
+
+dt>a {
+    margin-left: 340px;
+    font-size: large;
+}
+
+#sp {
+    margin-left: 80px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+    margin-left: 40px;
+}
+/* les styles des icones */
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #dcdccd;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #8a1538;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+/* pour qu'il reste toujour au fond */
+footer{
+	margin-top: auto;
+	float: left;
+}
+/* la position des blocks */
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px Qatar2022, sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}

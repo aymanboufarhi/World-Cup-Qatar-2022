@@ -1,0 +1,55 @@
+/* Qatar2022 font */
+@font-face { font-family: Qatar2022; font-weight: bolder; src: url('./Qatar2022Font/Graphik-Arabic-Medium.otf'); } 
+@font-face { font-family: Qatar2022; font-weight: bold; src: url('./Qatar2022Font/Qatar2022Arabic-Bold.ttf');}
+@font-face { font-family: Qatar2022; font-weight: lighter; src: url('./Qatar2022Font/Qatar2022Arabic-Heavy.ttf');} 
+/* les statistiques des joueurs */
+#pstats{
+  text-align: center;
+  font-family: Qatar2022, Cambria, Cochin, sans-serif;
+}
+/* les images des joueurs */
+#pstats img{
+  border-radius: 50%;
+  width: 200px;
+  height: 150px;
+  border: 3px solid #C9867E;
+}
+#stats {
+  justify-content: center;
+  text-align: center;
+  font-family: Qatar2022, Cambria, Cochin, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  margin: auto;
+}
+/* le tableaux des statistiques des joueurs */
+#stats td, #stats th {
+  padding: 8px;
+}
+
+#stats tr:nth-child(even){background-color: #f2f2f2;}
+
+#stats tr:hover {
+  background-color: #ddd;
+  transition: all 0.1s ease-in-out;
+}
+  
+#stats th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #C9867E;
+  color: white;
+}
+#stats th:first-of-type {
+  border-top-left-radius: 10px;
+}
+#stats th:last-of-type {
+  border-top-right-radius: 10px;
+}
+#stats tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+#stats tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
